@@ -1,6 +1,6 @@
 {
   "name": "tailwind-custom-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tailwind plugin",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ali-Hussein-dev/tw-custom-utilities.git"
+    "url": "git+https://github.com/Ali-Hussein-dev/tailwind-custom-utilities.git"
   },
   "keywords": [
     "tailwindcss"
@@ -16,9 +16,9 @@
   "author": "Ali",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ali-Hussein-dev/tw-custom-utilities/issues"
+    "url": "https://github.com/Ali-Hussein-dev/tailwind-custom-utilities/issues"
   },
-  "homepage": "https://github.com/Ali-Hussein-dev/tw-custom-utilities#readme",
+  "homepage": "https://github.com/Ali-Hussein-dev/tailwind-custom-utilities#readme",
   "devDependencies": {
     "tailwindcss": "^3.1.8"
   }
