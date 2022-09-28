@@ -8,23 +8,36 @@ const twCustomUtilities = plugin(
           "align-items": "center",
           "justify-content": value,
         }),
+      },
+      {
+        values: {
+          ...theme("flexRow"),
+          ...theme("gridAutoFit"),
+        },
+      }
+    );
+    matchUtilities(
+      {
         "flex-col": (value) => ({
           display: "flex",
           flexDirection: "column",
           "align-items": value,
           "justify-content": `flex-center`,
         }),
+      },
+      {
+        values: theme("flexCol"),
+      }
+    );
+    matchUtilities(
+      {
         "grid-auto-fit": (value) => ({
           display: "grid",
           gridTemplateColumns: `repeat(auto-fit, minmax(${value}, 1fr))`,
         }),
       },
       {
-        values: {
-          ...theme("flexRow"),
-          ...theme("flexCol"),
-          ...theme("gridAutoFit"),
-        },
+        values: theme("gridAutoFit"),
       }
     );
   },
