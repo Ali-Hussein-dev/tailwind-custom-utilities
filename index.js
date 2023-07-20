@@ -22,7 +22,7 @@ const twCustomUtilities = plugin(
           display: "flex",
           flexDirection: "column",
           "align-items": value,
-          "justify-content": `flex-center`,
+          "justify-content": `center`,
         }),
       },
       {
