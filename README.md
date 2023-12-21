@@ -32,7 +32,8 @@ module.exports = {
 | `flex-row-end`      | flex items-center justify-end               |
 | `flex-row-center`   | flex items-center justify-center            |
 | `flex-row-evenly`   | flex items-center justify-evenly            |
-| `flex-row-around`   | flex items-center justify-around            |
+| `flex-row-around`   | flex items-center justify-around
+| `flex-row-between`  | flex items-center justify-between
 | `flex-col-start`    | flex flex-col justify-center items-start    |
 | `flex-col-end`      | flex flex-col justify-center items-end      |
 | `flex-col-center`   | flex flex-col justify-center items-center   |
