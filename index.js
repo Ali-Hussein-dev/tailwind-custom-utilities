@@ -5,8 +5,8 @@ const twCustomUtilities = plugin(
       {
         "flex-row": (value) => ({
           display: "flex",
-          "align-items": "center",
-          "justify-content": value,
+          flexDirection: "row",
+          ...value,
         }),
       },
       {
@@ -21,8 +21,7 @@ const twCustomUtilities = plugin(
         "flex-col": (value) => ({
           display: "flex",
           flexDirection: "column",
-          "align-items": value,
-          "justify-content": `center`,
+          ...value,
         }),
       },
       {
@@ -44,19 +43,52 @@ const twCustomUtilities = plugin(
   {
     theme: {
       flexRow: {
-        start: "flex-start",
-        end: "flex-end",
-        center: "center",
-        between: "space-between",
-        around: "space-around",
-        evenly: "space-evenly",
+        start: {
+          "align-items": "center",
+          "justify-content": "flex-start"
+        },
+        end: {
+          "align-items": "center",
+          "justify-content": "flex-end"
+        },
+        center: {
+          "align-items": "center",
+          "justify-content": "center"
+        },
+        between: {
+          "align-items": "center",
+          "justify-content": "space-between"
+        },
+        around: {
+          "align-items": "center",
+          "justify-content": "space-around"
+        },
+        evenly: {
+          "align-items": "center",
+          "justify-content": "space-evenly"
+        },
       },
       flexCol: {
-        start: "flex-start",
-        end: "flex-end",
-        center: "center",
-        baseline: "baseline",
-        stretch: "stretch",
+        start: {
+          "align-items": "flex-start",
+          "justify-content": "center"
+        },
+        end: {
+          "align-items": "flex-end",
+          "justify-content": "center"
+        },
+        center: {
+          "align-items": "center",
+          "justify-content": "center"
+        },
+        baseline: {
+          "align-items": "baseline",
+          "justify-content": "center"
+        },
+        stretch: {
+          "align-items": "stretch",
+          "justify-content": "center"
+        }
       },
       gridAutoFit: {
         DEFAULT: "16rem",
